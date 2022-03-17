@@ -1,0 +1,37 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+    font-weight: 700;
+}

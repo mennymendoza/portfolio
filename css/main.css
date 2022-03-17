@@ -1,0 +1,171 @@
+/* Top Level Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General Rules */
+
+header, section, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 800px;
+}
+
+.inner-section {
+    min-width: 960px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Specific Rules */
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+.icon {
+    font-family: "Raleway";
+    font-weight: 100;
+    padding: 10px;
+    color: white;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav a {
+    color: white;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 200;
+}
+
+.nav a:hover {
+    transition-duration: 0.08s;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+/* Banner Specific Rules */
+
+.banner {
+    background-color: black;
+}
+
+.banner h1 {
+    font-family: "Raleway";
+    font-weight: 200;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    width: 45%;
+}
+
+.banner img {
+    color: white;
+    width: 45%;
+}
+
+/* Card Set Specific Rules */
+
+.card-set {
+    height: 900px;
+}
+
+.card {
+    width: 30%;
+    height: 70%;
+}
+
+.card h2, .card p, .card a {
+    line-height: 46px;
+    color: black;
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+.card h2 {
+    margin: 20px 0px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.card p, .card a {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+/* Footer Specific Rules */
+
+footer {
+    background-color: black;
+    height: 350px;
+}
+
+footer h2, .contacts {
+    font-family: "Raleway";
+    font-weight: 100;
+    color: white;
+}
+
+footer h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+footer .nav {
+    height: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.column-1 .nav {
+    align-items: flex-start;
+}
+
+.column-1 a {
+    padding: 10px;
+}
