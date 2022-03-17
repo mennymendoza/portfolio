@@ -48,6 +48,10 @@ header {
     height: 100px;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .icon {
     font-family: "Raleway";
     font-weight: 100;

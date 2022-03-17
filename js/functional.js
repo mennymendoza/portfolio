@@ -12,7 +12,7 @@ const Header = (props) => {
     return (
         <header>
             <div className="inner-section">
-                <h1 className="icon">juan mendoza</h1>
+                <a href="index.html"><h1 className="icon">juan mendoza</h1></a>
                 <Navigation navLinks={props.navLinks} />
             </div>
         </header>
