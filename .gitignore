@@ -1,2 +1,4 @@
 assets/images
 assets/files
+.DS_Store
+*/.DS_Store
