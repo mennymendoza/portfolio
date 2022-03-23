@@ -41,6 +41,26 @@ section {
     align-items: center;
 }
 
+/* Text Box Specific Rules */
+
+.text-box h1 {
+    font-family: "Raleway";
+    font-weight: 200;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.text-box p, .text-box a {
+    line-height: 46px;
+    color: white;
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
+}
+
 /* Header Specific Rules */
 
 header {
@@ -93,18 +113,25 @@ header a {
     background-color: black;
 }
 
-.banner h1 {
-    font-family: "Raleway";
-    font-weight: 200;
-    text-align: center;
-    font-size: 50px;
-    color: white;
+.banner .text-box {
     width: 45%;
 }
 
 .banner img {
     color: white;
     width: 45%;
+}
+
+.banner.reverse {
+    background-color: white;
+}
+
+.banner.reverse h1, .banner.reverse p, .banner.reverse a {
+    color: black;
+}
+
+.banner.reverse .inner-section {
+    flex-direction: row-reverse;
 }
 
 /* Card Set Specific Rules */

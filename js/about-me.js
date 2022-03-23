@@ -32,24 +32,14 @@ class App extends React.Component {
                 contactLink: "Juanmendoza97@mail.fresnostate.edu"
             }
         ],
-        homepageCards: [
+        bannerContent: [
             {
-                imageSrc: "assets/images/monitor.jpg",
-                cardTitle: "Work Experience",
-                description: "I have experience in web design, software engineering and academic research.",
-                cardLink: "experience.html"
+                textTitle: "Education",
+                textContent: "I will be graduating from Fresno State University with a Bachelor's Degree in Computer Science in May 2022.",
             },
             {
-                imageSrc: "assets/images/keyboard.jpg",
-                cardTitle: "Research",
-                description: "I've done research projects in the fields of cybersecurity and machine learning.",
-                cardLink: "research.html"
-            },
-            {
-                imageSrc: "assets/images/setup.jpg",
-                cardTitle: "Projects",
-                description: "I've built websites, web applications and neural networks for fun.",
-                cardLink: "projects.html"
+                textTitle: "Hobbies",
+                textContent: "I love to build things. I have several personal projects (mostly video games) in the works. Other hobbies include playing guitar, playing piano, recording music and cooking. My favorite type of book is non-fiction.",
             }
         ]
     }
@@ -57,6 +47,8 @@ class App extends React.Component {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
+                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/glasses.jpg" />
+                <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/glasses.jpg" invert={true}/>
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>
         );

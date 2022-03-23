@@ -52,13 +52,16 @@ class App extends React.Component {
                 description: "I've built websites, web applications and neural networks for fun.",
                 cardLink: "projects.html"
             }
-        ]
+        ],
+        bannerContent: {
+            textTitle: "This portfolio is hosted on an Apache server using CloudFare for SSL."
+        }
     }
     render() {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
-                <Banner text="This portfolio is hosted on an Apache server using CloudFare for SSL." imageSrc="assets/images/glasses.jpg" />
+                <Banner text={this.state.bannerContent} imageSrc="assets/images/glasses.jpg" />
                 <CardSet cards={this.state.homepageCards} />
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>

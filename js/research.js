@@ -32,24 +32,29 @@ class App extends React.Component {
                 contactLink: "Juanmendoza97@mail.fresnostate.edu"
             }
         ],
-        homepageCards: [
+        cardContent: [
             {
                 imageSrc: "assets/images/monitor.jpg",
-                cardTitle: "Work Experience",
-                description: "I have experience in web design, software engineering and academic research.",
+                cardTitle: "Motivation",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "experience.html"
             },
             {
                 imageSrc: "assets/images/keyboard.jpg",
-                cardTitle: "Research",
-                description: "I've done research projects in the fields of cybersecurity and machine learning.",
+                cardTitle: "Approach",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "research.html"
             },
             {
                 imageSrc: "assets/images/setup.jpg",
-                cardTitle: "Projects",
-                description: "I've built websites, web applications and neural networks for fun.",
+                cardTitle: "Results",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "projects.html"
+            }
+        ],
+        bannerContent: [
+            {
+                textTitle: "Pharmaceutical Stress vs. Strain Simulations"
             }
         ]
     }
@@ -57,6 +62,8 @@ class App extends React.Component {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
+                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/glasses.jpg" />
+                <CardSet cards={this.state.cardContent} />
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>
         );

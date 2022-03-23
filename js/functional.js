@@ -19,11 +19,39 @@ const Header = (props) => {
     );
 }
 
-const Banner = (props) => {
+const TextBox = (props) => {
+    let boxContents = [<h1>{props.textTitle}</h1>];
+    if (props.textContent) {
+        boxContents.push(<p>{props.textContent}</p>);
+    }
+    if (props.textLink) {
+        let linkContent = "Learn More"
+        if (props.linkDescription) {
+            linkContent = props.linkDescription;
+        }
+        boxContents.push(<a href={props.textLink}>{linkContent}</a>);
+    }
     return (
-        <section className="banner">
+        <div className="text-box">
+            {boxContents}
+        </div>
+    );
+}
+
+const Banner = (props) => {
+    let bannerClass = "banner";
+    if (props.invert) {
+        bannerClass = "banner reverse";
+    }
+    return (
+        <section className={bannerClass}>
             <div className="inner-section">
-                <h1>{props.text}</h1>
+                <TextBox
+                    textTitle={props.text.textTitle}
+                    textContent={props.text.textContent}
+                    textLink={props.text.textLink}
+                    linkDescription={props.text.linkDescription}
+                />
                 <img src={props.imageSrc} alt="No image found."/>
             </div>
         </section>
@@ -56,7 +84,7 @@ const Footer = (props) => {
         <footer>
             <div className="inner-section">
                 <div className="column-1">
-                    <h2>Contact Info</h2>
+                    <h2>More Links</h2>
                     <ul className="nav">
                         {props.contactList.map(obj => <a href={obj.contactLink}><li className="nav-link">{obj.contactName}</li></a>)}
                     </ul>
