@@ -47,8 +47,8 @@ class App extends React.Component {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
-                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/glasses.jpg" />
-                <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/glasses.jpg" invert={true}/>
+                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/fresno-state-bulldog.png" />
+                <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/piano.jpg" invert={true}/>
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>
         );

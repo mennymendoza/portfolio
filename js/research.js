@@ -34,19 +34,19 @@ class App extends React.Component {
         ],
         cardContent: [
             {
-                imageSrc: "assets/images/monitor.jpg",
+                imageSrc: "assets/images/motivation.png",
                 cardTitle: "Motivation",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "experience.html"
             },
             {
-                imageSrc: "assets/images/keyboard.jpg",
+                imageSrc: "assets/images/approach.png",
                 cardTitle: "Approach",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "research.html"
             },
             {
-                imageSrc: "assets/images/setup.jpg",
+                imageSrc: "assets/images/results.png",
                 cardTitle: "Results",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 cardLink: "projects.html"
@@ -62,7 +62,7 @@ class App extends React.Component {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
-                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/glasses.jpg" />
+                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/data-sample.png" />
                 <CardSet cards={this.state.cardContent} />
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>

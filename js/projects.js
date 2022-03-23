@@ -34,6 +34,10 @@ class App extends React.Component {
         ],
         bannerContent: [
             {
+                textTitle: "Portfolio",
+                textContent: "This portfolio was built with ReactJS using the Babel transpiler. I used CSS for styling. I also used Figma to design a prototype.",
+            },
+            {
                 textTitle: "Gomoku",
                 textContent: "Web implementation of the board game gomoku. Built with pure HTML, CSS, Javascript and PHP. Utilizes a MySQL database for the backend.",
             },
@@ -49,8 +53,9 @@ class App extends React.Component {
         return (
             <div className="main-container">
                 <Header navLinks={this.state.navLinks} />
-                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/glasses.jpg" />
-                <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/glasses.jpg" invert={true}/>
+                <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/figma.png" />
+                <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/gomoku.png" invert={true} />
+                <Banner text={this.state.bannerContent[2]} imageSrc="assets/images/rubiks-cube.jpg" />
                 <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
             </div>
         );

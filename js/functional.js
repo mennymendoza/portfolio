@@ -79,12 +79,21 @@ const Banner = (props) => {
 }
 
 const Card = (props) => {
+    let cardContent = [
+        <img src={props.content.imageSrc} alt="No image found." />,
+        <h2 className="card-title">{props.content.cardTitle}</h2>,
+        <p className="card-description">{props.content.description}</p>
+    ];
+    if (props.content.cardLink) {
+        let linkDescription = "Learn More";
+        if (props.content.linkDescription) {
+            linkDescription = props.content.linkDescription;
+        }
+        cardContent.push(<a href={props.content.cardLink} className="card-link">{linkDescription}</a>)
+    }
     return (
         <div className="card">
-            <img src={props.content.imageSrc} alt="No image found." />
-            <h2 className="card-title">{props.content.cardTitle}</h2>
-            <p className="card-description">{props.content.description}</p>
-            <a href={props.content.cardLink} className="card-link">Learn More</a>
+            {cardContent}
         </div>
     );
 }
