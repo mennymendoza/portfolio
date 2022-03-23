@@ -30,7 +30,7 @@ class App extends React.Component {
             },
             {
                 contactName: "Email",
-                contactLink: "Juanmendoza97@mail.fresnostate.edu"
+                contactLink: "mailto:Juanmendoza97@mail.fresnostate.edu"
             }
         ],
         homepageCards: [
