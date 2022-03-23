@@ -1,0 +1,46 @@
+/* BMD Banner Rules */
+
+#bmd-banner {
+    background-color: #232B37;
+}
+
+#bmd-banner .stripe {
+    background-color: #DEAC6B;
+}
+
+#bmd-banner h1 {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 75px;
+}
+
+/* BMD Card Set Rules */
+
+#bmd-cardset {
+    height: 1025px;
+}
+
+#bmd-cardset .card {
+    width: 45%;
+}
+
+#bmd-cardset img {
+    height: 400px;
+}
+
+/* FS Student Housing Banner */
+
+#fs-housing-banner {
+    background-color: #142443;
+}
+
+#fs-housing-banner .stripe {
+    background-color: #A81126;
+}
+
+#fs-housing-banner h1 {
+    font-family: "Merriweather";
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 170%;
+}

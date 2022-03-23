@@ -1,4 +1,5 @@
-/* Custom Fonts */
+
+/* Raleway */
 
 @font-face {
     font-family: "Raleway";
@@ -34,4 +35,19 @@
     font-family: "Raleway";
     src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
     font-weight: 700;
+}
+
+/* Oswald */
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../assets/fonts/Oswald/static/Oswald-Bold.ttf");
+    font-weight: 700;
+}
+
+/* Merriweather */
+@font-face {
+    font-family: "Merriweather";
+    src: url("../assets/fonts/Merriweather/Merriweather-Black.ttf");
+    font-weight: 900;
 }

@@ -41,26 +41,6 @@ section {
     align-items: center;
 }
 
-/* Text Box Specific Rules */
-
-.text-box h1 {
-    font-family: "Raleway";
-    font-weight: 200;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.text-box p, .text-box a {
-    line-height: 46px;
-    color: white;
-    font-family: "Raleway";
-    font-weight: 300;
-    font-size: 30px;
-    font-weight: 400;
-}
-
 /* Header Specific Rules */
 
 header {
@@ -107,6 +87,26 @@ header a {
     border-radius: 4px;
 }
 
+/* Text Box Specific Rules */
+
+.text-box h1 {
+    font-family: "Raleway";
+    font-weight: 200;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.text-box p, .text-box a {
+    line-height: 46px;
+    color: white;
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
+}
+
 /* Banner Specific Rules */
 
 .banner {
@@ -134,10 +134,43 @@ header a {
     flex-direction: row-reverse;
 }
 
+/* Title Banner Specific Rules */
+
+.title-banner {
+    height: 644px;
+    z-index: -2;
+}
+
+.stripe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 45%;
+}
+
+.stripe {
+    width: 50px;
+    height: 764px;
+    margin: 0px 10px;
+    position: relative;
+    transform: rotate(10deg);
+    z-index: -1;
+    background-color: white;
+}
+
+.title-banner.reverse .inner-section {
+    flex-direction: row-reverse;
+}
+
+.title-banner.reverse .stripe {
+    transform: rotate(-10deg);
+}
+
 /* Card Set Specific Rules */
 
 .card-set {
     height: 900px;
+    background-color: white;
 }
 
 .card {

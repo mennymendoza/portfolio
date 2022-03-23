@@ -38,6 +38,26 @@ const TextBox = (props) => {
     );
 }
 
+const TitleBanner = (props) => {
+    let bannerClass = "title-banner";
+    if (props.invert) {
+        bannerClass = "title-banner reverse";
+    }
+    return (
+        <section id={props.text.id} className={bannerClass}>
+            <div className="inner-section">
+                <TextBox
+                    textTitle={props.text.textTitle}
+                />
+                <div className="stripe-container">
+                    <div className="stripe"></div>
+                    <div className="stripe"></div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
 const Banner = (props) => {
     let bannerClass = "banner";
     if (props.invert) {
@@ -70,13 +90,25 @@ const Card = (props) => {
 }
 
 const CardSet = (props) => {
-    return (
-        <section className="card-set">
-            <div className="inner-section">
-                {props.cards.map(obj => <Card content={obj} />)}
-            </div>
-        </section>
+    let cardSetContents = (
+        <div className="inner-section">
+            {props.cards.map(obj => <Card content={obj} />)}
+        </div>
     );
+    if (props.id) {
+        return (
+            <section id={props.id} className="card-set">
+                {cardSetContents}
+            </section>
+        );
+    }
+    else {
+        return (
+            <section className="card-set">
+                {cardSetContents}
+            </section>
+        );
+    }
 }
 
 const Footer = (props) => {
