@@ -36,20 +36,19 @@ class App extends React.Component {
             {
                 imageSrc: "assets/images/motivation.png",
                 cardTitle: "Motivation",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                cardLink: "experience.html"
+                description: "The goal of the project was to predict the behavior of pharmaceutical powders under extreme pressure. This is normally done through computationally-intensive simulations."
             },
             {
                 imageSrc: "assets/images/approach.png",
                 cardTitle: "Approach",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                cardLink: "research.html"
+                description: "I created a training dataset of simulation inputs and outputs with the help of German PhD student Kostas Giannis. Then, I built a neural network to predict simulation outputs in Python using the Keras Sequential API.",
             },
             {
                 imageSrc: "assets/images/results.png",
                 cardTitle: "Results",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                cardLink: "projects.html"
+                description: "I tried many different neural network architectures before finding one that worked well. Once I was finished, I presented the results to all of my professors at Fresno State.",
+                cardLink: "assets/files/research-presentation.pdf",
+                linkDescription: "See slides"
             }
         ],
         bannerContent: [

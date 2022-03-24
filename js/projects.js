@@ -40,6 +40,8 @@ class App extends React.Component {
             {
                 textTitle: "Gomoku",
                 textContent: "Web implementation of the board game gomoku. Built with pure HTML, CSS, Javascript and PHP. Utilizes a MySQL database for the backend.",
+                textLink: "https://github.com/mennymendoza/gomoku",
+                linkDescription: "View repo"
             },
             {
                 textTitle: "Rubik’s Cube Solver",

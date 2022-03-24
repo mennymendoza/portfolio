@@ -36,9 +36,9 @@ class App extends React.Component {
             {
                 imageSrc: "assets/images/bmd-sample.jpg",
                 cardTitle: "Web Design",
-                description: "I designed a marketing website to sell Stage Projectors and a few marketing webpages for the main BMD website using Webflow.",
-                // cardLink: "experience.html",
-                // linkDescription: "See sample"
+                description: "I designed a marketing website and a few webpages for the main BMD website using Webflow. I've included a prototype I designed in Figma with temporary text.",
+                cardLink: "assets/files/bmd-prototype.pdf",
+                linkDescription: "See sample"
             },
             {
                 imageSrc: "assets/images/ruby-on-rails.jpg",
