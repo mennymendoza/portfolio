@@ -18,20 +18,6 @@ class App extends React.Component {
                 "link": "projects.html"
             }
         ],
-        contactList: [
-            {
-                contactName: "LinkedIn",
-                contactLink: "https://www.linkedin.com/in/juan-mendoza-dev/"
-            },
-            {
-                contactName: "GitHub",
-                contactLink: "https://github.com/mennymendoza"
-            },
-            {
-                contactName: "Email",
-                contactLink: "Juanmendoza97@mail.fresnostate.edu"
-            }
-        ],
         bannerContent: [
             {
                 textTitle: "Portfolio",
@@ -58,7 +44,7 @@ class App extends React.Component {
                 <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/figma.png" />
                 <Banner text={this.state.bannerContent[1]} imageSrc="assets/images/gomoku.png" invert={true} />
                 <Banner text={this.state.bannerContent[2]} imageSrc="assets/images/rubiks-cube.jpg" />
-                <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
+                <Footer navLinks={this.state.navLinks} />
             </div>
         );
     }

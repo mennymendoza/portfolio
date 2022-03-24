@@ -19,20 +19,6 @@ class App extends React.Component {
                 "link": "projects.html"
             }
         ],
-        contactList: [
-            {
-                contactName: "LinkedIn",
-                contactLink: "https://www.linkedin.com/in/juan-mendoza-dev/"
-            },
-            {
-                contactName: "GitHub",
-                contactLink: "https://github.com/mennymendoza"
-            },
-            {
-                contactName: "Email",
-                contactLink: "mailto:Juanmendoza97@mail.fresnostate.edu"
-            }
-        ],
         homepageCards: [
             {
                 imageSrc: "assets/images/monitor.jpg",
@@ -63,7 +49,7 @@ class App extends React.Component {
                 <Header navLinks={this.state.navLinks} />
                 <Banner text={this.state.bannerContent} imageSrc="assets/images/server.jpg" />
                 <CardSet cards={this.state.homepageCards} />
-                <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
+                <Footer navLinks={this.state.navLinks} />
             </div>
         );
     }

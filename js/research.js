@@ -18,20 +18,6 @@ class App extends React.Component {
                 "link": "projects.html"
             }
         ],
-        contactList: [
-            {
-                contactName: "LinkedIn",
-                contactLink: "https://www.linkedin.com/in/juan-mendoza-dev/"
-            },
-            {
-                contactName: "GitHub",
-                contactLink: "https://github.com/mennymendoza"
-            },
-            {
-                contactName: "Email",
-                contactLink: "Juanmendoza97@mail.fresnostate.edu"
-            }
-        ],
         cardContent: [
             {
                 imageSrc: "assets/images/motivation.png",
@@ -63,7 +49,7 @@ class App extends React.Component {
                 <Header navLinks={this.state.navLinks} />
                 <Banner text={this.state.bannerContent[0]} imageSrc="assets/images/data-sample.png" />
                 <CardSet cards={this.state.cardContent} />
-                <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
+                <Footer navLinks={this.state.navLinks} />
             </div>
         );
     }

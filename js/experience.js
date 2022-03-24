@@ -18,20 +18,6 @@ class App extends React.Component {
                 "link": "projects.html"
             }
         ],
-        contactList: [
-            {
-                contactName: "LinkedIn",
-                contactLink: "https://www.linkedin.com/in/juan-mendoza-dev/"
-            },
-            {
-                contactName: "GitHub",
-                contactLink: "https://github.com/mennymendoza"
-            },
-            {
-                contactName: "Email",
-                contactLink: "Juanmendoza97@mail.fresnostate.edu"
-            }
-        ],
         bmdCards: [
             {
                 imageSrc: "assets/images/bmd-sample.jpg",
@@ -82,7 +68,7 @@ class App extends React.Component {
                 <CardSet id="bmd-cardset" cards={this.state.bmdCards} />
                 <TitleBanner text={this.state.titleBannerContent[1]} invert={true}/>
                 <CardSet id="fs-housing-cardset" cards={this.state.housingCards} />
-                <Footer contactList={this.state.contactList} navLinks={this.state.navLinks} />
+                <Footer navLinks={this.state.navLinks} />
             </div>
         );
     }

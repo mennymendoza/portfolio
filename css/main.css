@@ -220,6 +220,20 @@ footer h2 {
     margin-bottom: 20px;
 }
 
+.footer-info {
+    color: white;
+    font-family: "Raleway";
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 20px 0px;
+}
+
 footer .nav {
     height: 50%;
     flex-direction: column;

@@ -125,10 +125,14 @@ const Footer = (props) => {
         <footer>
             <div className="inner-section">
                 <div className="column-1">
-                    <h2>More Links</h2>
+                    <h2>More Info</h2>
+                    <div className="separator"></div>
                     <ul className="nav">
-                        {props.contactList.map(obj => <a href={obj.contactLink}><li className="nav-link">{obj.contactName}</li></a>)}
+                        <a href="https://github.com/mennymendoza"><li className="nav-link">GitHub</li></a>
+                        <a href="https://www.linkedin.com/in/juan-mendoza-dev/"><li className="nav-link">LinkedIn</li></a>
                     </ul>
+                    <div className="separator"></div>
+                    <p className="footer-info">Email: Juanmendoza97@mail.fresnostate.edu</p>
                 </div>
                 <Navigation navLinks={props.navLinks} />
             </div>
