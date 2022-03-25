@@ -46,8 +46,8 @@ img {
 /* Header Specific Rules */
 
 header {
+    padding: 20px 0px;
     background-color: black;
-    height: 100px;
 }
 
 header a {
@@ -62,7 +62,6 @@ header a {
 }
 
 .nav {
-    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,6 +88,10 @@ header a {
     border-radius: 4px;
 }
 
+.nav-link {
+    padding: 15px 0px;
+}
+
 /* Text Box Specific Rules */
 
 .text-box h1 {
@@ -113,7 +116,7 @@ header a {
 
 .banner {
     background-color: black;
-    padding: 150px;
+    padding: 150px 0px;
 }
 
 .banner .text-box {
@@ -213,7 +216,7 @@ header a {
 
 footer {
     background-color: black;
-    padding: 70px;
+    padding: 70px 0px;
 }
 
 footer h2, .contacts {
@@ -252,4 +255,61 @@ footer .nav-link {
 
 .column-1 .nav {
     align-items: flex-start;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+    .inner-section {
+        width: 100% !important;
+        min-width: 300px;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .card, #bmd-cardset .card {
+        width: 70% !important;
+        margin: 30px;
+    }
+
+    .card img {
+        height: 350px;
+    }
+
+    .stripe-container {
+        display: none;
+    }
+
+    .text-box {
+        margin: 40px 10px !important;
+    }
+
+    .column-1 h2 {
+        text-align: center !important;
+    }
+
+    .column-1 p {
+        margin: 20px 0px;
+    }
+
+    header h1 {
+        margin: 20px;
+    }
+
+    .nav {
+        align-items: center !important;
+    }
+    
+    .separator {
+        display: none;
+    }
+
+    .banner {
+        padding: 100px;
+    }
+
+    img {
+        margin: 20px 0px;
+    }
 }
