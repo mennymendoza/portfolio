@@ -41,8 +41,22 @@ class App extends React.Component {
         ],
         bannerContent: {
             textTitle: "This portfolio is hosted on an Apache server using CloudFare for SSL."
-        }
+        },
+        width: window.innerWidth
+    };
+
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
     }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    handleWindowSizeChange = () => {
+        this.setState({width: window.innerWidth})
+    }
+
     render() {
         return (
             <div className="main-container">

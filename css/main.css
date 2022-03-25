@@ -270,7 +270,7 @@ footer .nav-link {
     
     .card, #bmd-cardset .card {
         width: 70% !important;
-        margin: 30px;
+        margin: 30px 0px;
     }
 
     .card img {
@@ -306,7 +306,7 @@ footer .nav-link {
     }
 
     .banner {
-        padding: 100px;
+        padding: 100px 0px;
     }
 
     img {
