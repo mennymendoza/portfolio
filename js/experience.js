@@ -39,7 +39,7 @@ class App extends React.Component {
                 description: "I redesigned the entire Student Housing frontend to match the new Fresno State website redesign."
             },
             {
-                imageSrc: "assets/images/keyboard.jpg",
+                imageSrc: "assets/images/fs-housing-content.png",
                 cardTitle: "Content Maintenance",
                 description: "I also updated content on the Fresno State Student Housing website to ensure it remained relevant."
             },

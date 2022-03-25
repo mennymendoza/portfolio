@@ -25,7 +25,7 @@ class App extends React.Component {
             },
             {
                 textTitle: "Hobbies",
-                textContent: "I love to build things. I have several personal projects (mostly video games) in the works. Other hobbies include playing guitar, playing piano, recording music and cooking. My favorite type of book is non-fiction.",
+                textContent: "I love to create things. I have several personal projects (mostly video games) in the works. Other hobbies include playing guitar, playing piano, recording music and cooking. My favorite type of book is non-fiction.",
             }
         ]
     }

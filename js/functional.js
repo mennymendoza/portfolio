@@ -126,7 +126,6 @@ const Footer = (props) => {
             <div className="inner-section">
                 <div className="column-1">
                     <h2>More Info</h2>
-                    <div className="separator"></div>
                     <ul className="nav">
                         <a href="https://github.com/mennymendoza"><li className="nav-link">GitHub</li></a>
                         <a href="https://www.linkedin.com/in/juan-mendoza-dev/"><li className="nav-link">LinkedIn</li></a>

@@ -31,6 +31,10 @@ section {
     height: 800px;
 }
 
+img {
+    max-width: 700px;
+}
+
 .inner-section {
     min-width: 960px;
     width: 65%;
