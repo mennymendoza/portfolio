@@ -27,9 +27,7 @@ header, section, footer {
     align-items: center;
 }
 
-section {
-    height: 800px;
-}
+
 
 img {
     max-width: 700px;
@@ -115,6 +113,7 @@ header a {
 
 .banner {
     background-color: black;
+    padding: 150px;
 }
 
 .banner .text-box {
@@ -173,8 +172,12 @@ header a {
 /* Card Set Specific Rules */
 
 .card-set {
-    height: 900px;
+    padding: 170px 0px;
     background-color: white;
+}
+
+.card-set .inner-section {
+    align-items: flex-start;
 }
 
 .card {
@@ -210,7 +213,7 @@ header a {
 
 footer {
     background-color: black;
-    height: 350px;
+    padding: 70px;
 }
 
 footer h2, .contacts {
@@ -239,15 +242,14 @@ footer h2 {
 }
 
 footer .nav {
-    height: 50%;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.column-1 .nav {
-    align-items: flex-start;
+footer .nav-link {
+    padding: 10px 5px;
 }
 
-.column-1 a {
-    padding: 10px;
+.column-1 .nav {
+    align-items: flex-start;
 }
