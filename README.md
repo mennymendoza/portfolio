@@ -1,3 +1,3 @@
 # portfolio
 
-Link: juanmendozadev.com
+https://juanmendozadev.com
